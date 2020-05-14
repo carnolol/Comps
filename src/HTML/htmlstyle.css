@@ -1,0 +1,12 @@
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: crimson;
+    box-shadow: 0 0 10px black;
+    float: left;
+    display: flex;
+
+    /* 25D */
+    /* 25C */
+}
