@@ -1,0 +1,54 @@
+.main-comp-div > h1{
+    color: cornflowerblue;
+    /* font-size: 5rem; */
+}
+
+.main-comp-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 600px){
+    .main-comp-div{
+        display: none;
+    }
+}
+
+.purple-circle{
+    height: 250px;
+    background-color: rebeccapurple;
+    width: 250px;
+    animation-name: stuff;
+    animation-duration: 3s;
+    /* animation-iteration-count: initial; this does it just once */
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* 28C	keyframes */
+
+@keyframes stuff{
+    from{
+        top: 0px;
+    }
+    to{
+        border-radius: 50%;
+        width:  100px;
+        height: 100px;
+        transform: rotate(180deg);
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+
+/* 28D	transition
+28E	transform  */
+.purple-circle:hover{
+    height: 350px;
+    width: 350px;
+    transform: rotate(45deg);
+    transition: all .5s ease-in-out;
+}
+

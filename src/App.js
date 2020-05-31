@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './App.css'
+import Component1 from './components/compnent1'
 
 
 
@@ -20,7 +22,8 @@ export class App extends Component {
   render() {
     return (
       <div>
-        
+          APP JS
+          <Component1/>
       </div>
     )
   }
